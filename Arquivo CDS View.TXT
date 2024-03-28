@@ -1,0 +1,19 @@
+1 - Podemos criar uma view de projeção, onde é possível retirar campos ou adicionar campos, sem modificar a estrutura original. Por exemplo:
+
+define view NewLIKP as select from LIKP {
+	key VBELN,
+               key POSNR,
+               // novos campos
+               saldoVenda
+}
+
+2 - Seria possível criando uma CDS view fazendo um select na calculation view conforme o exemplo abaixo.
+
+@AbapCatalog.sqlViewName: 'ZCDS_TMF_NF_DOC_VIEW'
+define view 'ZCDS_TMF_NF_DOC_VIEW as select from sap.glo.tmf.ecf.lancamentoContabil {
+    NUNLCTO,
+    EXERCICIO
+}
+
+3 - O BOPF e um framework criado pela SAP para simplificar o desenvolvimento de aplicações ABAP, trazendo uma forma simples a modelagem de modelos de dados, 
+acilitando na criação de CRUD, e simplificando o desenvolvimento ABAP.
