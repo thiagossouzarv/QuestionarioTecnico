@@ -1,0 +1,10 @@
+ 1 - Para a criação de um serviço odata no SAP Gateway deve ir na transação SEGW, 
+ onde é possível criar uma criar um servico do zero, ou utilizar uma função RFC como modelo, 
+ ou uma estrutura ABAP, após definir a estrutura, o odata permite que implemente todos os métodos do CRUD, 
+ onde a consulta e referenciada no padrão HTML como método GET, a inserção como método POST, o update como método PUT e o delete com método DELETE.
+
+ 2 - No contexto de SAP OData EDM representa os objetos de negócios que está sendo expostos por um serviço OData.
+
+ 3 - Dentro do SAP existe a transação /IWFND/GW_CLIENT que permite a chamada dos WS odata, onde nela e possível 
+ selecionar os métodos e as entidades de cada serviço. Por fora do SAP pode ser utilizado todas as ferramentas que 
+ trabalha com teste de REST Full, exemplo: Postman, Insomnia, powershell, Curl entre outros.
