@@ -1,0 +1,10 @@
+1 - O principal cuidado que deve se atentar quando fazer o join entre duas calculations view e verificar a 
+massa de dados das duas vão trazer antes do join, resultando em uma performance consulta lenta, 
+outro detalhe que precisa se atendar nos campos de junção são adequados para que não traga dados desnecessários. 
+
+2 - Quanto menos colunas habilitadas vai fazer com que o select seja menor no banco de dados, nisso trazendo 
+um ganho de performance e tambem ajudando na organização e facilitando a compreensão da calculation view. 
+
+3 - A forma mais rápida seria fazer um teste de desempenho, onde faria o teste em cada nó da calculation view, 
+começando pelo no final e ir descendo até o nó raiz, onde sera possível identificar em qual junção ou união está trazendo 
+muitos dados desnecessários comprometendo a performance da calculation view.   
