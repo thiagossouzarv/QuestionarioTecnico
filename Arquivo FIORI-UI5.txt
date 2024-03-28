@@ -1,0 +1,29 @@
+1 - Sim, fiz algumas aplicações do zero, uma delas que foi a mais complexa que desenvolvi, 
+seria a vistoria de veículos, onde foi desenvolvido uma aplicação onde era possível criar 
+a vistoria do caminhão antes da entrada no pátio de carregamento, nesta aplicação era identificar 
+e cadastrar o motorista, cadastrar o caminhão e os reboques, após esse cadastro vinha um formulário 
+com vários campos para o usuario fazer o checklist no caminhão, dependendo da respostas do vistoriador, 
+a aplicação liberava ou reprovava a entrada do veículo dentro do pátio, nesta aplicação tambem era possível 
+do usuario entrar com fotos do caminhão e reboque, no final da vistoria tinha uma tela com um canvas, 
+onde era possível a assinatura do motorista e tambem a do vistoriador. Esta aplicação gerava um formulário SMARTFORMS 
+com os dados da vistoria, e tambem inseria o veículo a uma fila de carregamento dentro do ECC, nesta aplicação foi desenvolvido em FIORI FreStyle, 
+pois a empresa queria elementos personalizados via CSS, e tambem por causa da assinatura precisar utilizar o elemento canvas do HTML.
+
+2 - O Fiori permite versionamento de codigo através de algumas ferramentas, a mais ideal seria utilizando GitHub, 
+pois o mesmo tem ferramentas onde e possível verificar o que foi modificado em cada COMMIT e a possibilidade de 
+criar branch separadas para cada modificação, onde permite modificações em arquivos sem afetar o codigo que está 
+na máster. Outra opção seria criar versionamento através do Transport Organize no ambiente SAP.
+
+3 - No XML View utilizasse linguagem de marcação, onde é possível colocar os elementos e seus atributos, 
+a grande vantagem desse formato a e facilidade de compreensão dos elementos, no JS View e criado um arquivo 
+na linguagem JAVASCRIPT, onde os elementos são criados diretamente no arquivo .js, a vantagem desse tipo de 
+view e a manipulação direta dos eventos de um elemento. A utilização de cada um vai depender da complexibilidade 
+do projeto ou a preferência do desenvolvedor. 
+
+4 - O Fiori Elements traz alguns templates prontos para a utilização para a criação de aplicações:
+List Report: cria uma lista com uma tabela com elementos para pesquisa
+Object page: e um template utilizado para exibir detalhes de um objeto único, poderia ser uma tela quando clicado em uma linha da tabela do list report.
+Overview Page: E usado para criar dashboards com gráficos, cartões informativos e tabelas, este e muito utilizado para visão geral de negócios. 
+Analytical List Page: Este e utilizado para exibir dados analíticos, possui recursos de filtro de intervalos e analise de tendências.
+Worklist: este cria listagem de tabela com a possibilidade de ações, um pouco parecido com o list report, tambem oferece filtragem, classificação e agrupamento.
+Worklist Report: este seria a junção do list report com a possibilidade de ações nos itens. 
