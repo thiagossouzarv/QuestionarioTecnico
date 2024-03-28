@@ -1,0 +1,19 @@
+1 - O SAP TDF e um Ambiente criado pela Sap para o envio de obrigações fiscais, no brasil o memso e utilizado para envio de E-Social, 
+Reinf, Speed fiscal, ECF e EFD. Este e um ambiente separado do S4 e ECC.
+
+2 - 2 - Sim, tenho experiência com SAP TDF desde o início do E-Social, por volta de 2015, trabalhei na implantação do mesmo, 
+tanto na parte do ECC com a customização de alguns campos, quanto a parte do TDF, onde foi criado uma calculation view com os 
+dados que vinha das tabelas do ECC (nesse ambiente as tabelas eram replicadas via SLT), após foi criado um Report ALV onde era 
+listado os registros de cada período e o mesmo era gravado na tabela shadown, para que assim fosse possível o envio da obrigação 
+através dos processos standart.  Tambem trabalhei com a implantação e manutenção em outras empresas que presto serviço, 
+nestas fiz a implementação das obrigações do REINF, tanto os eventos R-2010 e R-2020 (INSS), em um clube que atendo tambem fiz 
+a implatação do evento R-2030 e R-2040, na primeira empresa que trabalhei tambem fiz a manutenção nos eventos R-2055 (funrural), 
+tambem trabalhei com os eventos R-4010 e R-4020.
+
+3 - Para fazer a customização de algumas obrigações a SAP criou tabelas Shadown, onde é possível modificar as configurações e as informações de algum evento.
+Uma forma de customização seria através destas tabelas, seria os passos a seguir:
+Criar uma calculation view com os dados do evento necessário, podendo ser utilizado tabelas que venha do S4 ou outras calculation view da SAP.
+
+Após criar um relatorio para listagem dos dados da calculation view criada (nesta podemos utilizar um select diretamente na calculation view ou 
+criamos uma visão da mesma dentro do eclipse), com as informações listadas nesse relatorio, podemos alimentar as tabelas Shadown, 
+a partir desse ponto seria utilizado o processo standart, onde ja existe toda a parte de envio e recepção dos eventos.
